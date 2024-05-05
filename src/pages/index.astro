@@ -1,6 +1,6 @@
 ---
 import Button from "../components/Button.astro";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 ---
 
 <html lang="en">
@@ -15,10 +15,10 @@ import { Icon } from "astro-icon";
     <h1>Astro</h1>
     <Button id="my-btn" aria-label="Add to cart" variety="default" isBordered>
       <span>Btn text</span>
-      <Icon name="ph:apple-logo-fill" width="24" />
+      <Icon name="ph:apple-logo-fill" width={24} />
     </Button>
     <Button id="my-btn" aria-label="Add to cart" variety="icon" isBordered>
-      <Icon name="ph:apple-logo-fill" width="24" />
+      <Icon name="ph:apple-logo-fill" width={24} />
     </Button>
   </body>
 </html>
