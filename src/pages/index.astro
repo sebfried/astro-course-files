@@ -1,5 +1,6 @@
 ---
-
+import data from "../data/cardData.json";
+console.log(JSON.stringify(data));
 ---
 
 <html lang="en">
@@ -12,5 +13,7 @@
   </head>
   <body>
     <!-- Place pricing section here -->
+    {data[1].tier}
+    {data[1].features[1].title}
   </body>
 </html>
